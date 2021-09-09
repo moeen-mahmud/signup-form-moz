@@ -6,12 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Join Moz Today 🚀</title>
     <!-- Tailwind CSS CDN -->
-    <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
   </head>
   <body>
+    <main>
+      <div class="container">
+        <div class="">
+          <div class="form-header">
+            <h1>Join Us Now!</h1>
+            <p>Reading books are easier than ever before</p>
+          </div>
+          <form class="form-area" id="form" novalidate>
+            <div class="form-control">
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="First Name"
+                required
+              />
+              <small></small>
+            </div>
+            <div class="form-control">
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Last Name"
+                required
+              />
+              <small></small>
+            </div>
+            <div class="form-control">
+              <label for="user-name">Enter a username you like</label>
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="7Mojo_jojo"
+                title="Username should be between 4 to 25 characters long, must start with a letter, it only accepts letters, numbers and undrescore character but cannot end with an underscore character"
+                required
+              />
+              <small></small>
+            </div>
+            <div class="form-control">
+              <label for="user-email">Email address</label>
+              <input type="email" name="user-email" id="user-email" />
+            </div>
+            <div class="form-control">
+              <label for="user-pass">Password</label>
+              <input
+                type="password"
+                name="user-pass"
+                id="user-pass"
+                placeholder="Password"
+                required
+              />
+              <small></small>
+            </div>
+            <div class="form-control">
+              <label for="pass-retype">Password</label>
+              <input
+                type="password"
+                name="pass-retype"
+                id="pass-retype"
+                placeholder="Retype password"
+                required
+              />
+              <small></small>
+            </div>
+            <button id="submit-btn" class="btn">Let's go 🚀</button>
+          </form>
+        </div>
+      </div>
+    </main>
     <!-- App Source File -->
     <script src="./app/app.js"></script>
   </body>
