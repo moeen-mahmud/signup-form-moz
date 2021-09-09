@@ -10,6 +10,7 @@
   --neutral-color: #fefeff;
 }
 
+/* Global Style */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,7 +19,8 @@
   font-family: "Poppins", sans-serif;
 }
 
-.container {
+/* Main Container Styling */
+.main-container {
   min-height: 100vh;
   position: relative;
   display: grid;
@@ -26,6 +28,7 @@
   background: linear-gradient(to right, #6a3093, #a044ff);
 }
 
+/* Form Card Styling */
 .form-card {
   background-color: var(--neutral-color);
   color: var(--text-color);
@@ -54,7 +57,7 @@
   gap: 1.5rem;
 }
 
-.form-control {
+.form-mechanism {
   margin-bottom: 1rem;
   position: relative;
 }
@@ -70,6 +73,7 @@ input {
   padding: 5px 10px;
 }
 
+/* Button Styling */
 button {
   margin-top: 1.5rem;
   padding: 10px 55px;
@@ -81,6 +85,7 @@ button {
   cursor: pointer;
 }
 
+/* Style for error message */
 .error-msg {
   position: absolute;
   top: 75px;
@@ -98,6 +103,7 @@ button {
   border: 1px solid var(--succes-color);
 }
 
+/* Style for tooltip */
 label .info {
   position: relative;
   cursor: help;
