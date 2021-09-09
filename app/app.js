@@ -9,7 +9,7 @@ const passRetype = document.getElementById("pass-retype");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   checkInputs();
-  if (checkValidity() === true) {
+  if (form.checkValidity() === true) {
     clearFields();
   }
 });
@@ -33,10 +33,7 @@ const checkInputs = () => {
     setSuccessFor(lastName);
   }
   if (!isUserName(userNameValue)) {
-    setErrorFor(
-      userName,
-      "Username should be between 4 to 25 characters long, must start with a letter, it only accepts letters, numbers and undrescore character but cannot end with an underscore character"
-    );
+    setErrorFor(userName, "Enter a valid username!");
   } else {
     setSuccessFor(userName);
   }
@@ -46,12 +43,12 @@ const checkInputs = () => {
     setSuccessFor(userEmail);
   }
   if (!isPass(userPassValue)) {
-    setErrorFor(userPass);
+    setErrorFor(userPass, "Please enter a valid password");
   } else {
     setSuccessFor(userPass);
   }
   if (userPassValue !== passRetypeValue) {
-    setErrorFor(passRetype);
+    setErrorFor(passRetype, "Password doesn't match!");
   } else {
     setSuccessFor(passRetype);
   }
@@ -63,6 +60,7 @@ const setErrorFor = (input, message) => {
   small.classList.add("error-msg");
   small.innerText = message;
   input.classList.add("input-error");
+  input.classList.remove("input-success");
 };
 
 const setSuccessFor = (input) => {
@@ -71,6 +69,23 @@ const setSuccessFor = (input) => {
   small.classList.remove("error-msg");
   small.innerText = "";
   input.classList.add("input-success");
+  input.classList.remove("input-error");
+};
+
+const isUserName = (userName) => {
+  return /^[A-Za-z]\w+[A-Za-z0-9]{4,25}$/.test(userName);
+};
+
+const isMail = (userEmail) => {
+  return /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(
+    userEmail
+  );
+};
+
+const isPass = (userPass) => {
+  return /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/.test(
+    userPass
+  );
 };
 
 const clearFields = () => {
