@@ -6,7 +6,7 @@
   --text-color: #232832;
   --primary-color: #874fee;
   --warning-color: #e23e58;
-  --succes-color: rgb(79, 228, 143);
+  --succes-color: #4fe48f;
   --neutral-color: #fefeff;
 }
 
@@ -86,5 +86,12 @@ button {
   font-size: 0.75rem;
   font-style: italic;
   color: var(--warning-color);
-  /* visibility: hidden; */
+}
+
+.input-error {
+  border: 1px solid var(--warning-color);
+}
+
+.input-success {
+  border: 1px solid var(--succes-color);
 }
