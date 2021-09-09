@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Join Moz Today 🚀</title>
-    <!-- Tailwind CSS CDN -->
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <main>
       <div class="container">
-        <div class="">
+        <div class="form-card">
           <div class="form-header">
             <h1>Join Us Now!</h1>
             <p>Reading books are easier than ever before</p>
@@ -39,7 +40,7 @@
               <small></small>
             </div>
             <div class="form-control">
-              <label for="user-name">Enter a username you like</label>
+              <label for="user-name">Username</label>
               <input
                 type="text"
                 name="user-name"
@@ -52,7 +53,13 @@
             </div>
             <div class="form-control">
               <label for="user-email">Email address</label>
-              <input type="email" name="user-email" id="user-email" />
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="someone@something.com"
+                required
+              />
             </div>
             <div class="form-control">
               <label for="user-pass">Password</label>
@@ -66,7 +73,7 @@
               <small></small>
             </div>
             <div class="form-control">
-              <label for="pass-retype">Password</label>
+              <label for="pass-retype">Retype Password</label>
               <input
                 type="password"
                 name="pass-retype"
@@ -76,7 +83,7 @@
               />
               <small></small>
             </div>
-            <button id="submit-btn" class="btn">Let's go 🚀</button>
+            <button id="submit-btn">Let's go 🚀</button>
           </form>
         </div>
       </div>
