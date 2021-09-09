@@ -35,21 +35,23 @@
 }
 
 .form-header {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .form-header h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 1.5;
 }
 
-.form-header p {
-  color: var(--primary-color);
+.form-area {
+  display: grid;
+  place-items: center;
 }
 
-.form-area {
-  display: flex;
-  flex-direction: column;
+.input-area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
 }
 
 .form-control {
@@ -69,8 +71,8 @@ input {
 }
 
 button {
-  margin-top: 1rem;
-  padding: 10px;
+  margin-top: 1.5rem;
+  padding: 10px 55px;
   border: none;
   background-color: var(--primary-color);
   color: var(--neutral-color);
@@ -82,7 +84,7 @@ button {
 .error-msg {
   position: absolute;
   top: 75px;
-  right: 0;
+  left: 0;
   font-size: 0.75rem;
   font-style: italic;
   color: var(--warning-color);
@@ -94,4 +96,36 @@ button {
 
 .input-success {
   border: 1px solid var(--succes-color);
+}
+
+label .info {
+  position: relative;
+  cursor: help;
+}
+
+label .info:hover::before {
+  content: attr(data-title);
+  position: absolute;
+  left: 20px;
+  /* height: 160px; */
+  width: 150px;
+  display: inline-block;
+  padding: 3px 6px;
+  border-radius: 2px;
+  background: var(--text-color);
+  color: var(--neutral-color);
+  font-size: 12px;
+  /* white-space: pre-wrap; */
+  opacity: 0.9;
+  z-index: 1000;
+}
+
+label .info:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  display: inline-block;
+  border: 8px solid transparent;
+  border-bottom: 8px solid var(--text-color);
 }

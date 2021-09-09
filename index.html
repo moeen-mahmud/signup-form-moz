@@ -7,6 +7,11 @@
     <title>Join Moz Today 🚀</title>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./styles/style.css" />
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/0442be25ff.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <main>
@@ -14,75 +19,89 @@
         <div class="form-card">
           <div class="form-header">
             <h1>Join Us Now!</h1>
-            <p>Reading books are easier than ever before</p>
           </div>
           <form class="form-area" id="form" novalidate>
-            <div class="form-control">
-              <label for="first-name">First Name</label>
-              <input
-                type="text"
-                name="first-name"
-                id="first-name"
-                placeholder="First Name"
-                required
-              />
-              <small></small>
-            </div>
-            <div class="form-control">
-              <label for="last-name">Last Name</label>
-              <input
-                type="text"
-                name="last-name"
-                id="last-name"
-                placeholder="Last Name"
-                required
-              />
-              <small></small>
-            </div>
-            <div class="form-control">
-              <label for="user-name">Username</label>
-              <input
-                type="text"
-                name="user-name"
-                id="user-name"
-                placeholder="Mojo_jojo"
-                title="Username should be between 4 to 25 characters long, must start with a letter, it only accepts letters, numbers and undrescore character but cannot end with an underscore character"
-                required
-              />
-              <small></small>
-            </div>
-            <div class="form-control">
-              <label for="user-email">Email address</label>
-              <input
-                type="email"
-                name="user-email"
-                id="user-email"
-                placeholder="someone@something.com"
-                required
-              />
-              <small></small>
-            </div>
-            <div class="form-control">
-              <label for="user-pass">Password</label>
-              <input
-                type="password"
-                name="user-pass"
-                id="user-pass"
-                placeholder="Password"
-                required
-              />
-              <small></small>
-            </div>
-            <div class="form-control">
-              <label for="pass-retype">Retype Password</label>
-              <input
-                type="password"
-                name="pass-retype"
-                id="pass-retype"
-                placeholder="Retype password"
-                required
-              />
-              <small></small>
+            <div class="input-area">
+              <div class="form-control">
+                <label for="first-name">First Name</label>
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  placeholder="First Name"
+                  required
+                />
+                <small></small>
+              </div>
+              <div class="form-control">
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  placeholder="Last Name"
+                  required
+                />
+                <small></small>
+              </div>
+              <div class="form-control">
+                <label for="user-name"
+                  >Username
+                  <span
+                    data-title="Username should be between 4 to 25 characters long.
+                  Must start with a letter.
+                  It only accepts letters, numbers and undrescore character but cannot end with an underscore character"
+                    class="info"
+                    ><i class="fas fa-info-circle"></i></span
+                ></label>
+                <input
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                  placeholder="Mojo_jojo"
+                  required
+                />
+                <small></small>
+              </div>
+              <div class="form-control">
+                <label for="user-email">Email address</label>
+                <input
+                  type="email"
+                  name="user-email"
+                  id="user-email"
+                  placeholder="someone@something.com"
+                  required
+                />
+                <small></small>
+              </div>
+              <div class="form-control">
+                <label for="user-pass"
+                  >Password
+                  <span
+                    data-title="Password must contain 1 lowercase, 1 uppercase, and 1 numeric with at least 1 special character. Password should be 8 or more characters long"
+                    class="info"
+                    ><i class="fas fa-info-circle"></i></span
+                ></label>
+                <input
+                  type="password"
+                  name="user-pass"
+                  id="user-pass"
+                  placeholder="Password"
+                  required
+                />
+                <small></small>
+              </div>
+              <div class="form-control">
+                <label for="pass-retype">Retype Password</label>
+                <input
+                  type="password"
+                  name="pass-retype"
+                  id="pass-retype"
+                  placeholder="Retype password"
+                  required
+                />
+                <small></small>
+              </div>
             </div>
             <button id="submit-btn">Let's go 🚀</button>
           </form>

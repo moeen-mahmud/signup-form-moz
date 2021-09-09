@@ -72,6 +72,8 @@ const setSuccessFor = (input) => {
   input.classList.remove("input-error");
 };
 
+const userInfo = () => {};
+
 const isUserName = (userName) => {
   return /^[A-Za-z]\w+[A-Za-z0-9]{4,25}$/.test(userName);
 };
