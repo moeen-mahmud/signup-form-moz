@@ -8,7 +8,6 @@ const userName = document.getElementById("user-name");
 const userEmail = document.getElementById("user-email");
 const userPass = document.getElementById("user-pass");
 const passRetype = document.getElementById("pass-retype");
-const changeText = document.getElementById("change-text");
 
 /**
  * Event handler for submitting the form
@@ -137,7 +136,6 @@ const isPass = (userPass) => {
  * Function for clearing the input fields and show the success message
  */
 const clearFields = () => {
-  changeText.textContent = "Hurray!! 🥳";
   firstName.value = "";
   lastName.value = "";
   userName.value = "";
