@@ -20,9 +20,9 @@
 
 I took the challenge to practice the basics of **_RegEX_** and the inner mechanisms for validating a form. A user should input the username, email and password correctly, there would be a tooltip for the user for further help. If the validation success, the border-color of the input field will turn to green. In oppiste, it will turn to red and show the error message.
 
-![Desktop-View](./screenshot/.sign-up-moz-error.png)
+![Desktop-View](./screenshot/sign-up-moz-error.png)
 
-![Desktop-View](./screenshot/.sign-up-moz-success.gif)
+![Desktop-View](./screenshot/sign-up-moz-success.gif)
 
 ### Links
 
